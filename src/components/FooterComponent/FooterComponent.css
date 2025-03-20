@@ -1,0 +1,157 @@
+footer {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    color: #868e96;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    background: #228be6;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1rem;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Style pour l'overlay (fond sombre) */
+.ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Content {
+    position: relative;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    width: 90%;
+    max-height: 60vh;
+    overflow-y: auto;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    margin: auto;
+}
+
+.ReactModal__Content--after-open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ReactModal__Content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ReactModal__Content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ReactModal__Content label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.ReactModal__Content input[type="text"],
+.ReactModal__Content input[type="date"],
+.ReactModal__Content input[type="color"],
+.ReactModal__Content textarea,
+.ReactModal__Content select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+    width: 96%;
+    transition: border-color 0.3s ease;
+}
+
+.ReactModal__Content textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.ReactModal__Content input:focus,
+.ReactModal__Content textarea:focus,
+.ReactModal__Content select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.ReactModal__Content button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ReactModal__Content button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.ReactModal__Content button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.ReactModal__Content button:not([type="submit"]) {
+    background-color: #6c757d;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.ReactModal__Content button:not([type="submit"]):hover {
+    background-color: #5a6268;
+}
+
+.ReactModal__Content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.ReactModal__Content .close-button:hover {
+    color: #333;
+}

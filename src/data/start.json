@@ -1,0 +1,150 @@
+{
+  "taches": [
+    {
+      "id": 101,
+      "title": "1. Fonctionnalités",
+      "description": "Définir les fonctionnalités principales du projet en collaboration avec l'équipe et les parties prenantes.",
+      "date_creation": "01/01/2025",
+      "date_echeance": "01/03/2025",
+      "done": true,
+      "urgent": false,
+      "contacts": [
+        {
+          "name": "Paul"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "title": "2. Etude de marché",
+      "description": "Analyser le marché cible, les concurrents et les tendances pour identifier les opportunités et les risques.",
+      "date_creation": "01/01/2025",
+      "date_echeance": "01/03/2025",
+      "done": true,
+      "urgent": true,
+      "contacts": []
+    },
+    {
+      "id": 103,
+      "title": "3. Wireframes",
+      "description": "Créer des maquettes fonctionnelles pour visualiser la structure et l'interface utilisateur du projet.",
+      "date_creation": "01/01/2025",
+      "date_echeance": "13/03/2025",
+      "done": false,
+      "urgent": true,
+      "contacts": []
+    },
+    {
+      "id": 104,
+      "title": "4. Design",
+      "description": "Développer le design visuel et l'expérience utilisateur (UI/UX) en s'appuyant sur les wireframes validés.",
+      "date_creation": "01/01/2025",
+      "date_echeance": "18/03/2025",
+      "done": false,
+      "urgent": false,
+      "contacts": []
+    },
+    {
+      "id": 105,
+      "title": "5. Landing Page",
+      "description": "Concevoir et développer une page d'atterrissage attractive pour promouvoir le produit ou le service.",
+      "date_creation": "05/01/2025",
+      "date_echeance": "13/03/2025",
+      "done": false,
+      "urgent": false,
+      "contacts": []
+    },
+    {
+      "id": 106,
+      "title": "6. Développement",
+      "description": "Implémenter les fonctionnalités techniques et développer le produit selon les spécifications définies.",
+      "date_creation": "05/01/2025",
+      "date_echeance": "28/03/2025",
+      "done": false,
+      "urgent": false,
+      "contacts": []
+    },
+    {
+      "id": 107,
+      "title": "7. Publication / Déploiement",
+      "description": "Mettre en production le produit final et s'assurer de son bon fonctionnement sur les plateformes cibles.",
+      "date_creation": "06/01/2025",
+      "date_echeance": "28/03/2025",
+      "done": false,
+      "urgent": true,
+      "contacts": [
+        {
+          "name": "MyStore"
+        },
+        {
+          "name": "Bob"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "title": "8. Marketing",
+      "description": "Élaborer et exécuter une stratégie marketing pour promouvoir le produit et atteindre les objectifs de vente.",
+      "date_creation": "10/01/2025",
+      "date_echeance": "01/04/2025",
+      "done": false,
+      "urgent": false,
+      "contacts": []
+    },
+    {
+      "id": 109,
+      "title": "9. Feedbacks",
+      "description": "Recueillir et analyser les retours des utilisateurs pour améliorer le produit et préparer les prochaines itérations.",
+      "date_creation": "10/01/2025",
+      "date_echeance": "01/04/2025",
+      "done": false,
+      "urgent": false,
+      "contacts": []
+    }
+  ],
+  "categories": [
+    {
+      "id": 201,
+      "title": "Marketing",
+      "description": "Toutes les activités liées à la promotion, à la communication et à la stratégie commerciale.",
+      "color": "orange",
+      "icon": ""
+    },
+    {
+      "id": 202,
+      "title": "Dev",
+      "description": "Tâches relatives au développement technique, à la programmation et à l'implémentation des fonctionnalités.",
+      "color": "pink",
+      "icon": ""
+    },
+    {
+      "id": 203,
+      "title": "Autre",
+      "description": "Tâches ne relevant pas directement du marketing ou du développement, comme les retours utilisateurs ou les tâches administratives.",
+      "color": "bluesky",
+      "icon": ""
+    }
+  ],
+  "relations": [
+    {
+      "tache": 102,
+      "categorie": 201
+    },
+    {
+      "tache": 108,
+      "categorie": 201
+    },
+    {
+      "tache": 109,
+      "categorie": 203
+    },
+    {
+      "tache": 105,
+      "categorie": 202
+    },
+    {
+      "tache": 106,
+      "categorie": 202
+    }
+  ]
+}

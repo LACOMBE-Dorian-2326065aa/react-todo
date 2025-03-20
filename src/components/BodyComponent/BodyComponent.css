@@ -1,0 +1,252 @@
+.tasks-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.task {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.task-header:hover {
+    background-color: #f1f3f5;
+}
+
+.task-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3436;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    > span {
+        font-style: italic;
+    }
+}
+
+.task-header input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.task-header span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: #636e72;
+}
+
+.task-header img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.task-header img:hover {
+    background-color: rgba(108, 117, 125, 0.1);
+}
+
+.task-header img.expanded {
+    transform: rotate(180deg);
+}
+
+.task-details {
+    padding: 20px 24px;
+    border-top: 1px solid #e9ecef;
+    background-color: #fff;
+    animation: slideDown 0.3s ease-out;
+}
+
+.task-details > p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #495057;
+    padding-bottom: 20px;
+}
+
+.task-details p.created-at {
+    font-size: 0.85rem;
+    color: #868e96;
+}
+
+.task-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-footer button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    background: rgba(255, 0, 0, 0.4);
+    color: #FF0000;
+    border: 1px solid #FF0000;
+}
+
+.task-footer button:hover {
+    opacity: 0.8;
+}
+
+.task-details p.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.task-details p.contacts::before {
+    content: "👤 ";
+    margin-right: 6px;
+}
+
+.task-details p.contacts span {
+    background-color: #e7f5ff;
+    color: #228be6;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.filters {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    scale: 0.5;
+
+    > p {
+        scale: 2;
+        width: min-content;
+    }
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.rond {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.urgent {
+    position: absolute;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transform: translate(-25%, -25%);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tasks-list {
+        padding: 10px;
+    }
+
+    .task-header {
+        padding: 14px 18px;
+    }
+
+    .task-header h2 {
+        font-size: 1rem;
+    }
+
+    .task-header span {
+        font-size: 0.85rem;
+    }
+
+    .task-details {
+        padding: 16px 18px;
+    }
+}
