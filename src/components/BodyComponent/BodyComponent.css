@@ -250,3 +250,133 @@ input:checked + .slider:before {
         padding: 16px 18px;
     }
 }
+
+.filters {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.filters > p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #495057;
+    white-space: nowrap;
+}
+
+.filters select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-size: 0.9rem;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    padding-right: 30px;
+    min-width: 160px;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.filters select:hover {
+    border-color: #adb5bd;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e9ecef;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4dabf7;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+/* ... (conservez le reste de vos styles) ... */
+
+@media (max-width: 768px) {
+    .filters {
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .filters > p {
+        font-size: 0.85rem;
+    }
+
+    .filters select {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        min-width: 140px;
+    }
+
+    .switch {
+        width: 45px;
+        height: 25px;
+    }
+
+    .slider:before {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+input[type='color'] {
+    padding: 0 !important;
+}

@@ -2,7 +2,7 @@
   "taches": [
     {
       "id": 101,
-      "title": "1. Fonctionnalités",
+      "title": "Fonctionnalités",
       "description": "Définir les fonctionnalités principales du projet en collaboration avec l'équipe et les parties prenantes.",
       "date_creation": "01/01/2025",
       "date_echeance": "01/03/2025",
@@ -16,7 +16,7 @@
     },
     {
       "id": 102,
-      "title": "2. Etude de marché",
+      "title": "Etude de marché",
       "description": "Analyser le marché cible, les concurrents et les tendances pour identifier les opportunités et les risques.",
       "date_creation": "01/01/2025",
       "date_echeance": "01/03/2025",
@@ -26,7 +26,7 @@
     },
     {
       "id": 103,
-      "title": "3. Wireframes",
+      "title": "Wireframes",
       "description": "Créer des maquettes fonctionnelles pour visualiser la structure et l'interface utilisateur du projet.",
       "date_creation": "01/01/2025",
       "date_echeance": "13/03/2025",
@@ -36,7 +36,7 @@
     },
     {
       "id": 104,
-      "title": "4. Design",
+      "title": "Design",
       "description": "Développer le design visuel et l'expérience utilisateur (UI/UX) en s'appuyant sur les wireframes validés.",
       "date_creation": "01/01/2025",
       "date_echeance": "18/03/2025",
@@ -46,7 +46,7 @@
     },
     {
       "id": 105,
-      "title": "5. Landing Page",
+      "title": "Landing Page",
       "description": "Concevoir et développer une page d'atterrissage attractive pour promouvoir le produit ou le service.",
       "date_creation": "05/01/2025",
       "date_echeance": "13/03/2025",
@@ -56,7 +56,7 @@
     },
     {
       "id": 106,
-      "title": "6. Développement",
+      "title": "Développement",
       "description": "Implémenter les fonctionnalités techniques et développer le produit selon les spécifications définies.",
       "date_creation": "05/01/2025",
       "date_echeance": "28/03/2025",
@@ -66,7 +66,7 @@
     },
     {
       "id": 107,
-      "title": "7. Publication / Déploiement",
+      "title": "Publication / Déploiement",
       "description": "Mettre en production le produit final et s'assurer de son bon fonctionnement sur les plateformes cibles.",
       "date_creation": "06/01/2025",
       "date_echeance": "28/03/2025",
@@ -83,7 +83,7 @@
     },
     {
       "id": 108,
-      "title": "8. Marketing",
+      "title": "Marketing",
       "description": "Élaborer et exécuter une stratégie marketing pour promouvoir le produit et atteindre les objectifs de vente.",
       "date_creation": "10/01/2025",
       "date_echeance": "01/04/2025",
@@ -93,7 +93,7 @@
     },
     {
       "id": 109,
-      "title": "9. Feedbacks",
+      "title": "Feedbacks",
       "description": "Recueillir et analyser les retours des utilisateurs pour améliorer le produit et préparer les prochaines itérations.",
       "date_creation": "10/01/2025",
       "date_echeance": "01/04/2025",
